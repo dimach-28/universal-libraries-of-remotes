@@ -1,0 +1,965 @@
+Filetype: IR library file
+Version: 1
+# ==========================================
+# УНИВЕРСАЛЬНЫЙ ПУЛЬТ
+# ==========================================
+# Все сигналы сгруппированы по универсальным именам кнопок.
+# При нажатии кнопки Flipper Zero будет перебирать все сигналы с этим именем,
+# начиная с самых популярных брендов:
+# 1. Samsung
+# 2. LG
+# 3. SberTV (Салют ТВ)
+# 4. Haier
+# 5. TCL
+# 6. Panasonic
+# 7. Xiaomi
+# 8. Philips
+# 9. Hisense
+# 10. Medion
+# ==========================================
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА ВКЛ/ВЫКЛ (Power) ---
+# Samsung TV
+name: Power
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 02 00 00 00
+# LG TV 24LJ4840
+name: Power
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 08 00 00 00
+# LG TV Unknown
+name: Power
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 08 00 00 00
+# SberTV (Салют ТВ)
+name: Power
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: DC 00 00 00
+# Haier L42C1180
+name: Power
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 08 00 00 00
+# TCL 43S446
+name: Power
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 54 00 00 00
+# TCL Roku
+name: Power
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 17 E8 00 00
+# Panasonic TV 1
+name: Power
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: D0 03 00 00
+# Panasonic TV 2
+name: Power
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: D0 03 00 00
+# Xiaomi TV
+name: Power
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 985 605 587 589 587 1470 587 1472 586 589 587 1471 586 589 586 1470 587 589 586 1472 586 1472 585 10765 987 610 585 589 587 1472 585 1471 587 589 587 1470 588 588 587 1471 586 589 586 1471 587 1472 585 10765 987 609 586 590 585 1471 586 1473 585 589 587 1471 587 589 587 1471 586 589 587 1472 586 1471 586 10765 987 609 587 589 586 1471 586 1472 586 589 587 1471 586 589 587 1472 585 589 586 1472 586 1471 587 10764 988 609 586 589 587 1471 586 1471 587 588 588 1471 586 588 587 1470 587 588 587 1471 587 1471 586 10765 987 609 586 589 587 1470 587 1471 587 589 587 1470 587 590 586 1471 586 589 587 1470 588 1472 585 10764 988 608 587 588 587 1471 587 1472 586 590 585 1470 587 589 587 1471 586 589 587 1472 586 1471 586 10765 987 609 586 589 587 1470 587 1472 586 589 586 1471 586 589 587 1472 585 590 585 1472 586 1470 587 10765 987 609 586 589 586 1471 586 1471 587 589 587 1471 586 589 586 1471 587 588 587 1470 588 1472 586 10765 987 609 586 589 587 1470 587 1471 587 589 586 1471 586 589 586 1471 586 589 586 1471 587 1471 586 10764 987 609 587 590 585 1470 587 1472 586 589 587 1470 587 590 586 1471 586 589 586 1472 586 1471 586 10764 988 609 586 588 588 1471 586 1471 587 589 586 1471 586 589 587 1471 586 589 587 1471 587 1471 586 10764 988 609 586 589 587 1470 587 1471 587 589 587 1471 587 589 586 1470 587 589 587 1472 586 1471 586 10764 988 609 586 589 586 1471 586 1471 587 589 587 1472 585 589 587 1472 585 588 587 1472 586 1470 587 10764 988 609 586 588 588 1471 586 1471 587 589 586 1470 587 589 587 1469 588 588 587 1471 587 1471 586 10764 988 608 587 589 587 1470 587 1471 587 588 587 1471 586 588 587 1471 587 589 586 1471 587 1471 586 10765 987 608 587 588 588 1470 587 1474 584 590 585 1471 586 588 588 1471 586 587 589 1470 588 1471 586 10764 988 609 586 588 588 1471 587 1470 588 588 588 1470 587 588 587 1471 586 587 588 1471 587 1471 586
+# Philips 14PT136B
+name: Power
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 0C 00 00 00
+# Philips 14GX8510
+name: Power
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 0C 00 00 00
+# Xiaomi RC6
+name: Power
+type: parsed
+protocol: RC6
+address: 00 00 00 00
+command: 0C 00 00 00
+# Hisense 55U6K
+name: Power
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 08 00 00 00
+# Hisense 55K3201GUWUS
+name: Power
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 08 00 00 00
+# Hisense 32A4HAU
+name: Power
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 0D F2 00 00
+# Medion TV
+name: Power
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 0C 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА УВЕЛИЧЕНИЯ ГРОМКОСТИ (Vol_up) ---
+# Samsung TV
+name: Vol_up
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 07 00 00 00
+# LG TV 24LJ4840
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 02 00 00 00
+# LG TV Unknown
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 02 00 00 00
+# SberTV (Салют ТВ)
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 80 00 00 00
+# Haier L42C1180
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 02 00 00 00
+# TCL 43S446
+name: Vol_up
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: F4 00 00 00
+# TCL Roku
+name: Vol_up
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 0F F0 00 00
+# Panasonic TV 1
+name: Vol_up
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 00 02 00 00
+# Panasonic TV 2
+name: Vol_up
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 00 02 00 00
+# Xiaomi TV
+name: Vol_up
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 988 605 587 1176 588 589 586 882 587 1178 585 588 588 589 587 1470 587 1175 589 588 587 590 586 13118 986 608 587 1177 587 588 587 882 587 1178 586 588 587 589 587 1470 587 1177 587 590 585 588 588 13117 987 609 586 1177 587 590 585 882 587 1177 587 589 586 588 588 1472 585 1176 588 588 587 588 587 13118 986 608 587 1177 586 589 587 881 588 1177 587 588 587 589 587 1470 587 1177 587 589 586 588 588 13116 988 609 586 1178 586 589 586 883 586 1177 587 589 586 590 586 1471 586 1178 585 588 587 588 588 13117 987 609 586 1177 587 589 587 883 586 1177 586 589 587 589 586 1472 585 1176 588 589 587 589 587 13116 988 610 585 1178 586 588 588 882 587 1176 588 590 586 588 587 1471 586 1177 586 589 587 589 586
+# Philips 14PT136B
+name: Vol_up
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 10 00 00 00
+# Philips 14GX8510
+name: Vol_up
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 10 00 00 00
+# Xiaomi RC6
+name: Vol_up
+type: parsed
+protocol: RC6
+address: 00 00 00 00
+command: 10 00 00 00
+# Hisense 55U6K
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 02 00 00 00
+# Hisense 55K3201GUWUS
+name: Vol_up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 02 00 00 00
+# Hisense 32A4HAU
+name: Vol_up
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 44 BB 00 00
+# Medion TV
+name: Vol_up
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 10 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА УМЕНЬШЕНИЯ ГРОМКОСТИ (Vol_dn) ---
+# Samsung TV
+name: Vol_dn
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 0B 00 00 00
+# LG TV 24LJ4840
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 03 00 00 00
+# LG TV Unknown
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 03 00 00 00
+# SberTV (Салют ТВ)
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 81 00 00 00
+# Haier L42C1180
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 03 00 00 00
+# TCL 43S446
+name: Vol_dn
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 74 00 00 00
+# TCL Roku
+name: Vol_dn
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 10 EF 00 00
+# Panasonic TV 1
+name: Vol_dn
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 10 02 00 00
+# Panasonic TV 2
+name: Vol_dn
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 10 02 00 00
+# Xiaomi TV
+name: Vol_dn
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 990 603 589 1175 589 587 588 882 587 1175 588 588 588 589 586 1470 587 1471 587 588 588 881 588 12528 988 609 586 1177 587 589 586 882 587 1177 586 588 587 589 587 1470 587 1471 587 588 588 881 588 12527 989 607 588 1175 589 588 588 881 588 1175 588 588 588 587 589 1470 587 1470 588 589 587 881 588 12528 988 607 588 1175 589 588 587 882 587 1178 586 587 588 588 588 1472 586 1470 588 588 587 881 588 12529 987 608 587 1175 589 587 589 882 587 1175 589 589 587 587 589 1469 588 1470 588 587 589 881 588 12528 988 607 588 1175 589 590 585 883 586 1176 587 587 589 588 588 1471 586 1470 588 587 589 883 586 12527 989 607 588 1176 588 588 588 880 589 1176 588 588 588 589 586 1469 588 1469 589 588 587 881 588
+# Philips 14PT136B
+name: Vol_dn
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 11 00 00 00
+# Philips 14GX8510
+name: Vol_dn
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 11 00 00 00
+# Xiaomi RC6
+name: Vol_dn
+type: parsed
+protocol: RC6
+address: 00 00 00 00
+command: 11 00 00 00
+# Hisense 55U6K
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 03 00 00 00
+# Hisense 55K3201GUWUS
+name: Vol_dn
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 03 00 00 00
+# Hisense 32A4HAU
+name: Vol_dn
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 43 BC 00 00
+# Medion TV
+name: Vol_dn
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 11 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА ОТКЛЮЧЕНИЯ ЗВУКА (Mute) ---
+# Samsung TV
+name: Mute
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 0F 00 00 00
+# LG TV 24LJ4840
+name: Mute
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 09 00 00 00
+# LG TV Unknown
+name: Mute
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 09 00 00 00
+# SberTV (Салют ТВ)
+name: Mute
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: E2 00 00 00
+# Haier L42C1180
+name: Mute
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 09 00 00 00
+# TCL 43S446
+name: Mute
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: FC 00 00 00
+# Panasonic TV 1
+name: Mute
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 20 03 00 00
+# Panasonic TV 2
+name: Mute
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 20 03 00 00
+# Philips 14PT136B
+name: Mute
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 0D 00 00 00
+# Philips 14GX8510
+name: Mute
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 0D 00 00 00
+# Xiaomi RC6
+name: Mute
+type: parsed
+protocol: RC6
+address: 00 00 00 00
+command: 0D 00 00 00
+# Hisense 55U6K
+name: Mute
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 09 00 00 00
+# Hisense 55K3201GUWUS
+name: Mute
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 09 00 00 00
+# Hisense 32A4HAU
+name: Mute
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 0E F1 00 00
+# Medion TV
+name: Mute
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 0D 00 00 00
+# TCL Roku (Mute уже есть выше)
+name: Mute
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 20 DF 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА ПЕРЕКЛЮЧЕНИЯ ВХОДОВ (Input) ---
+# Samsung TV
+name: Input
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 01 00 00 00
+# LG TV 24LJ4840
+name: Input
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 0B 00 00 00
+# Haier L42C1180
+name: Input
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 0B 00 00 00
+# TCL 43S446
+name: Input
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: C5 00 00 00
+# Panasonic TV 1
+name: Input
+type: parsed
+protocol: Kaseikyo
+address: 82 02 20 00
+command: 00 03 00 00
+# Panasonic TV 1
+name: Input
+type: parsed
+protocol: Kaseikyo
+address: 80 02 20 00
+command: 50 00 00 00
+# Philips 14GX8510
+name: Input
+type: parsed
+protocol: RC5
+address: 00 00 00 00
+command: 38 00 00 00
+# Xiaomi RC6
+name: Input
+type: parsed
+protocol: RC6
+address: 00 00 00 00
+command: 38 00 00 00
+# Hisense 55U6K
+name: Input
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 0B 00 00 00
+# Hisense 55K3201GUWUS
+name: Input
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 0B 00 00 00
+# Hisense 32A4HAU
+name: Input
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 12 ED 00 00
+# Medion TV
+name: Input
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 38 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ВВЕРХ" (Up) ---
+# Samsung TV
+name: Up
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 60 00 00 00
+# LG TV 24LJ4840
+name: Up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 40 00 00 00
+# SberTV (Салют ТВ)
+name: Up
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: CA 00 00 00
+# TCL 43S446
+name: Up
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 9A 00 00 00
+# TCL Roku
+name: Up
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 19 E6 00 00
+# Hisense 55U6K
+name: Up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 56 00 00 00
+# Hisense 55K3201GUWUS
+name: Up
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 56 00 00 00
+# Hisense 32A4HAU
+name: Up
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 16 E9 00 00
+# Medion TV
+name: Up
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 826 866 828 869 1684 855 826 869 825 867 828 1718 1686 1704 1686 1738 1652 853 827 86100 825 869 825 869 1709 829 827 868 826 870 824 1721 1707 1713 1677 1682 1707 864 791
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ВНИЗ" (Down) ---
+# Samsung TV
+name: Down
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 61 00 00 00
+# LG TV 24LJ4840
+name: Down
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 41 00 00 00
+# SberTV (Салют ТВ)
+name: Down
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: D2 00 00 00
+# TCL 43S446
+name: Down
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 1A 00 00 00
+# TCL Roku
+name: Down
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 33 CC 00 00
+# Hisense 55U6K
+name: Down
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 57 00 00 00
+# Hisense 55K3201GUWUS
+name: Down
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 57 00 00 00
+# Hisense 32A4HAU
+name: Down
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 17 E8 00 00
+# Medion TV
+name: Down
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 13 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ВЛЕВО" (Left) ---
+# Samsung TV
+name: Left
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 65 00 00 00
+# LG TV 24LJ4840
+name: Left
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 07 00 00 00
+# SberTV (Салют ТВ)
+name: Left
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 99 00 00 00
+# TCL 43S446
+name: Left
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 6A 00 00 00
+# TCL Roku
+name: Left
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 1E E1 00 00
+# Hisense 55U6K
+name: Left
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 58 00 00 00
+# Hisense 55K3201GUWUS
+name: Left
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 58 00 00 00
+# Hisense 32A4HAU
+name: Left
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 19 E6 00 00
+# Medion TV
+name: Left
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 872 822 872 823 1680 857 874 821 873 822 872 1672 1682 1708 1681 1738 1651 1708 823 85252 875 822 873 821 1682 857 874 851 843 821 874 1671 1682 1709 1680 1707 1683 1708 873
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ВПРАВО" (Right) ---
+# Samsung TV
+name: Right
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 62 00 00 00
+# LG TV 24LJ4840
+name: Right
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 06 00 00 00
+# SberTV (Салют ТВ)
+name: Right
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: C1 00 00 00
+# TCL 43S446
+name: Right
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: EA 00 00 00
+# TCL Roku
+name: Right
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 2D D2 00 00
+# Hisense 55U6K
+name: Right
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 59 00 00 00
+# Hisense 55K3201GUWUS
+name: Right
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 59 00 00 00
+# Hisense 32A4HAU
+name: Right
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 18 E7 00 00
+# Medion TV
+name: Right
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 823 872 823 871 1658 881 824 872 823 872 822 1721 1658 1731 1659 1732 823 873 1656 86116 821 873 821 872 1657 883 822 872 822 873 821 1722 1657 1732 1658 1732 823 871 1658
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ОК" (Ok) ---
+# Samsung TV
+name: Ok
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 68 00 00 00
+# SberTV (Салют ТВ)
+name: Ok
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: CE 00 00 00
+# TCL 43S446
+name: Ok
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 2F 00 00 00
+# TCL Roku
+name: Ok
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 2A D5 00 00
+# LG TV 24LJ4840
+name: Ok
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 44 00 00 00
+# Hisense 55U6K
+name: Ok
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 5A 00 00 00
+# Hisense 55K3201GUWUS
+name: Ok
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 5A 00 00 00
+# Hisense 32A4HAU
+name: Ok
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 15 EA 00 00
+# Medion TV
+name: Ok
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 35 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "МЕНЮ" (Menu) ---
+# LG TV 24LJ4840
+name: Menu
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 43 00 00 00
+# TCL 43S446
+name: Menu
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 10 00 00 00
+# Samsung TV
+name: Menu
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 1A 00 00 00
+# Hisense 55U6K
+name: Menu
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 43 00 00 00
+# Hisense 32A4HAU
+name: Menu
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 14 EB 00 00
+# Haier L42C1180
+name: Menu
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 43 00 00 00
+# Medion TV
+name: Menu
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 30 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "НАЗАД" (Back) ---
+# Samsung TV
+name: Back
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 58 00 00 00
+# LG TV 24LJ4840
+name: Back
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 28 00 00 00
+# TCL 43S446
+name: Back
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: E4 00 00 00
+# TCL Roku
+name: Back
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 66 99 00 00
+# Hisense 55U6K
+name: Back
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 04 00 00 00
+# Hisense 55K3201GUWUS
+name: Back
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 04 00 00 00
+# Hisense 32A4HAU
+name: Back
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 48 B7 00 00
+# Medion TV
+name: Back
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 823 871 823 872 1681 859 822 873 822 871 823 1720 1683 858 823 1721 1682 1708 1681
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ВЫХОД" (Exit) ---
+# Samsung TV
+name: Exit
+type: parsed
+protocol: Samsung32
+address: 07 00 00 00
+command: 2D 00 00 00
+# SberTV (Салют ТВ)
+name: Exit
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 88 00 00 00
+# LG TV 24LJ4840
+name: Exit
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 5B 00 00 00
+# TCL 43S446
+name: Exit
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 60 00 00 00
+# TCL Roku
+name: Exit
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 66 99 00 00
+# Hisense 55K3201GUWUS
+name: Exit
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 4D 00 00 00
+# Hisense 32A4HAU
+name: Exit
+type: parsed
+protocol: NECext
+address: 00 BF 00 00
+command: 5C A3 00 00
+# Haier L42C1180
+name: Exit
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 5B 00 00 00
+# Medion TV
+name: Exit
+type: parsed
+protocol: RC5
+address: 01 00 00 00
+command: 25 00 00 00
+
+# --- УНИВЕРСАЛЬНАЯ КНОПКА "ДОМОЙ" (Home) ---
+# SberTV (Салют ТВ)
+name: Home
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 82 00 00 00
+# LG TV 24LJ4840
+name: Home
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 7C 00 00 00
+# TCL 43S446
+name: Home
+type: parsed
+protocol: RCA
+address: 0F 00 00 00
+command: 10 00 00 00
+# TCL Roku
+name: Home
+type: parsed
+protocol: NECext
+address: EA C7 00 00
+command: 03 FC 00 00
+# Hisense 55U6K
+name: Home
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 4A 00 00 00
