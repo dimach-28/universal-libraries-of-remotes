@@ -11,7 +11,7 @@
 1. Скачай файл `TV-AC-V3.ir` из этого репозитория.
 2. Подключи Flipper Zero к компьютеру.
 3. Скопируй файл на SD-карту по пути:  
-   `infrared/assets/universal_remote.ir`
+   `infrared/assets/TV-AC-V3.ir`
 4. Открой на Flipper Zero приложение **Infrared**.
 5. Выбери **Universal Remotes** → **Load from Library File** → выбери `TV-AC-V3.ir`.
 
